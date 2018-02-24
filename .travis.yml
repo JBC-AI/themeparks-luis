@@ -1,0 +1,12 @@
+stages:
+  - name: deploy
+    if: branch = master
+
+jobs:
+  include:
+    - stage: deploy
+      install: skip
+      script: skip
+      deploy:
+        provider: script
+        script: ./scripts/deploy.sh

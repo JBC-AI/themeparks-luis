@@ -1,0 +1,824 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "themeparks",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "fastPass:all"
+    },
+    {
+      "name": "fastPass:ride"
+    },
+    {
+      "name": "global:help"
+    },
+    {
+      "name": "global:switchPark"
+    },
+    {
+      "name": "greetings:hello"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "operatingHours:park"
+    },
+    {
+      "name": "rides:all"
+    },
+    {
+      "name": "status:all"
+    },
+    {
+      "name": "status:ride"
+    },
+    {
+      "name": "waitTimes:all"
+    },
+    {
+      "name": "waitTimes:longest"
+    },
+    {
+      "name": "waitTimes:ride"
+    },
+    {
+      "name": "waitTimes:shortest"
+    }
+  ],
+  "entities": [
+    {
+      "name": "rideName"
+    }
+  ],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "status",
+      "subLists": [
+        {
+          "canonicalForm": "open",
+          "list": [
+            "running"
+          ]
+        },
+        {
+          "canonicalForm": "closed",
+          "list": []
+        }
+      ]
+    }
+  ],
+  "bing_entities": [
+    "datetimeV2"
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "`",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "10",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "12",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "13",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "14",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "2",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "22",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "42",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "5",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "50",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "all rides",
+      "intent": "rides:all",
+      "entities": []
+    },
+    {
+      "text": "change park",
+      "intent": "global:switchPark",
+      "entities": []
+    },
+    {
+      "text": "closed rides",
+      "intent": "status:all",
+      "entities": []
+    },
+    {
+      "text": "does a bug's life have fast pass",
+      "intent": "fastPass:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 5,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "does the incredible hulk have fastpass",
+      "intent": "fastPass:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 5,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "efteling",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "fast pass rides",
+      "intent": "fastPass:all",
+      "entities": []
+    },
+    {
+      "text": "fastpass rides",
+      "intent": "fastPass:all",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "greetings:hello",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "global:help",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "greetings:hello",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "greetings:hello",
+      "entities": []
+    },
+    {
+      "text": "is it closed",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "is it open",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "is it open?",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "is the incredible hulk open",
+      "intent": "status:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 3,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "it is open",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "jurassic park wait",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 0,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "longest queue",
+      "intent": "waitTimes:longest",
+      "entities": []
+    },
+    {
+      "text": "longest wait",
+      "intent": "waitTimes:longest",
+      "entities": []
+    },
+    {
+      "text": "magic kingdom - walt disney world florida",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "meh",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "no",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "open rides",
+      "intent": "status:all",
+      "entities": []
+    },
+    {
+      "text": "productid=1&color=blue",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "queue for spiderman",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 10,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "queue times",
+      "intent": "waitTimes:all",
+      "entities": []
+    },
+    {
+      "text": "rides",
+      "intent": "rides:all",
+      "entities": []
+    },
+    {
+      "text": "seaworld orlando",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "select park",
+      "intent": "global:switchPark",
+      "entities": []
+    },
+    {
+      "text": "shortest queue",
+      "intent": "waitTimes:shortest",
+      "entities": []
+    },
+    {
+      "text": "shortest wait",
+      "intent": "waitTimes:shortest",
+      "entities": []
+    },
+    {
+      "text": "spiderman queue",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 0,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "spiderman wait time",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 0,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "switch park",
+      "intent": "global:switchPark",
+      "entities": []
+    },
+    {
+      "text": "the incredible hulk wait time",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 0,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "thorpe park",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "universal studios florida",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "wait time for incredible hulk",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 14,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "wait time for jimmy fallon",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 14,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "wait time for peter pan",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 14,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "wait time for pirates of the caribbean",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 14,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "wait time for race through new york",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 14,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "wait time for rc racer",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 14,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "wait time for ripit",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 14,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "wait time for spiderman",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 14,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "wait time for spiderman ?",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 14,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "wait time for tower of terror",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 14,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "wait time for toy soldiers",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 14,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "wait times",
+      "intent": "waitTimes:all",
+      "entities": []
+    },
+    {
+      "text": "wait times for avatar",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 15,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "wait times for dinosaur",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 15,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "wait times for flight of passage",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 15,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "wait times for mib",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 15,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "wait times for pirates",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 15,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "wait times for rc racer",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 15,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "wait times for spiderman",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 15,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "wait times for the incredible hulk",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 15,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "wait times for tower of terror",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 15,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "walt disney",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what are the queue times",
+      "intent": "waitTimes:all",
+      "entities": []
+    },
+    {
+      "text": "what are the queues like",
+      "intent": "waitTimes:all",
+      "entities": []
+    },
+    {
+      "text": "what are the wait times",
+      "intent": "waitTimes:all",
+      "entities": []
+    },
+    {
+      "text": "what can i ask",
+      "intent": "global:help",
+      "entities": []
+    },
+    {
+      "text": "what can i say",
+      "intent": "global:help",
+      "entities": []
+    },
+    {
+      "text": "what is the longest queue",
+      "intent": "waitTimes:longest",
+      "entities": []
+    },
+    {
+      "text": "what is the longest wait",
+      "intent": "waitTimes:longest",
+      "entities": []
+    },
+    {
+      "text": "what is the queue for spiderman",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 22,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "what is the shortest queue",
+      "intent": "waitTimes:shortest",
+      "entities": []
+    },
+    {
+      "text": "what is the shortest wait",
+      "intent": "waitTimes:shortest",
+      "entities": []
+    },
+    {
+      "text": "what is the wait for meet spider-man",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 21,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "what is the wait time for the incredible hulk",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 26,
+          "endPos": 44
+        }
+      ]
+    },
+    {
+      "text": "what ride has the longest queue",
+      "intent": "waitTimes:longest",
+      "entities": []
+    },
+    {
+      "text": "what ride has the longest wait",
+      "intent": "waitTimes:longest",
+      "entities": []
+    },
+    {
+      "text": "what ride has the shortest queue",
+      "intent": "waitTimes:shortest",
+      "entities": []
+    },
+    {
+      "text": "what ride has the shortest wait",
+      "intent": "waitTimes:shortest",
+      "entities": []
+    },
+    {
+      "text": "what rides are closed",
+      "intent": "status:all",
+      "entities": []
+    },
+    {
+      "text": "what rides are open",
+      "intent": "status:all",
+      "entities": []
+    },
+    {
+      "text": "what rides are there",
+      "intent": "rides:all",
+      "entities": []
+    },
+    {
+      "text": "what rides have fast pass",
+      "intent": "fastPass:all",
+      "entities": []
+    },
+    {
+      "text": "what rides have fastpass",
+      "intent": "fastPass:all",
+      "entities": []
+    },
+    {
+      "text": "what rides support fastpass",
+      "intent": "fastPass:all",
+      "entities": []
+    },
+    {
+      "text": "what time does it close today",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "what time does it close today ?",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "what time does it open today",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "what's the queue for spiderman",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 21,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "what's the wait for rc racer",
+      "intent": "waitTimes:ride",
+      "entities": [
+        {
+          "entity": "rideName",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "when does it close on today",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "when does it close today ?",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "when does it open",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "when does it open ?",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "when does it open on 12/1/17",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "when does it open on 12/12/18",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "when does it open on today",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "when does it open today ?",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "when does it open today?",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "when does it open?",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "when is it open?",
+      "intent": "operatingHours:park",
+      "entities": []
+    },
+    {
+      "text": "which rides have fastpass",
+      "intent": "fastPass:all",
+      "entities": []
+    }
+  ]
+}
